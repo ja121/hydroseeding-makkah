@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hydroseeding-makkah/static/css/main.40749c5b.css",
+    "main.js": "/hydroseeding-makkah/static/js/main.63f5ede3.js",
+    "static/js/453.1c9f36ac.chunk.js": "/hydroseeding-makkah/static/js/453.1c9f36ac.chunk.js",
+    "index.html": "/hydroseeding-makkah/index.html",
+    "main.40749c5b.css.map": "/hydroseeding-makkah/static/css/main.40749c5b.css.map",
+    "main.63f5ede3.js.map": "/hydroseeding-makkah/static/js/main.63f5ede3.js.map",
+    "453.1c9f36ac.chunk.js.map": "/hydroseeding-makkah/static/js/453.1c9f36ac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40749c5b.css",
+    "static/js/main.63f5ede3.js"
+  ]
+}
