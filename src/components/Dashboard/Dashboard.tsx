@@ -27,19 +27,19 @@ const Dashboard: React.FC = () => {
           <DataCard 
             title="رطوبة التربة" 
             value="65%" 
-            icon={<FaWater />}
+            
           />
           
           <DataCard 
             title="احتمالية نجاح الزراعة" 
             value="85%" 
-            icon={<FaSeedling />}
+            
           />
           
           <DataCard 
             title="تحليل الانحدار" 
             value="10%" 
-            icon={<FaMountain />}
+            
           />
           
           <DataCard 
