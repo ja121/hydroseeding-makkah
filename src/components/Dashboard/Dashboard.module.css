@@ -1,0 +1,100 @@
+/* Dashboard.module.css */
+.dashboardContainer {
+  font-family: Arial, sans-serif;
+  background-color: #e8f5e9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  color: #388E3C;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  flex: 1;
+  height: 100%;
+}
+
+.mapContainer {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 500px;
+  overflow: hidden;
+  position: relative; /* هذا مهم جداً لتحديد موضع اللوحة التوضيحية */
+}
+
+.dataCardsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+/* تنسيقات اللوحة التوضيحية (Legend) */
+.mapLegend {
+  position: absolute;
+  bottom: 50px; /* تم تغيير المسافة من الأسفل */
+  right: 50px; /* تم تغيير المسافة من اليمين */
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 24px; /* تم تكبير المسافة الداخلية */
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-size: 20px; /* تم تكبير حجم الخط */
+  z-index: 1000;
+}
+
+.legendTitle {
+  font-weight: bold;
+  margin-bottom: 15px; /* تم تكبير المسافة السفلية */
+  text-align: right;
+  font-size: 24px; /* تم تكبير حجم الخط */
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px; /* تم تكبير المسافة السفلية */
+  gap: 15px; /* تم تكبير المسافة بين اللون والنص */
+  direction: rtl;
+}
+
+.legendColorRed, .legendColorYellow, .legendColorGreen {
+  display: inline-block;
+  width: 28px; /* تم تكبير الدوائر */
+  height: 28px; /* تم تكبير الدوائر */
+  border-radius: 50%;
+}
+
+.legendColorRed {
+  background-color: #ff6961;
+}
+
+.legendColorYellow {
+  background-color: #ffda79;
+}
+
+.legendColorGreen {
+  background-color: #a0d468;
+}
+
+/* تنسيقات الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .mainContent {
+    grid-template-columns: 1fr;
+  }
+}
